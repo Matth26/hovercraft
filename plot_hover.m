@@ -1,18 +1,19 @@
 function [  ] = plot_hover(q, Vect_F, mode)
 
 global a larg long larg_mot long_mot
-persistent h1 h2 h3 h4 h5 h6 h7 h8
+persistent h1 h2 h3 h5 h6 h7 h8
 
 hold on
 %grid on
 axis equal
+
 % Dimension du robot
-larg= 0.035;				% largeur chassis
-long= 0.15;
+larg= 0.035; % largeur chassis
+long= 0.15; % longueur chassis
 
 a = 0.015;
-larg_mot = 0.02;
-long_mot = 0.01;
+larg_mot = 0.02; % largeur moteur
+long_mot = 0.01; % longueur moteur
 
 
 x_pos = q(2);
@@ -24,30 +25,31 @@ theta = q(6);
     Vect_v_abs(1) = q(1); % x_p = q(1)
     Vect_v_abs(2) = q(3); % y_p = q(3)
     Vect_v_abs(3) = q(5); % theta_p = q(5)
-    
+
+% On récupère les vecteurs u et v :
 Vect_v_rob = McInv(Vect_v_abs,q(6));
 u = Vect_v_rob(1);
 v = Vect_v_rob(2);
-
 
 % Plot des vitesses :
 ROT = [ cos(theta),-sin(theta);
         sin(theta),cos(theta)];
 
 center = [  (long/2);
-            0];
+            0           ];
+        
 center_abs = ROT*center + [x_pos; y_pos];
 
-uu = [u, 0]';
-uuu = ROT*uu;
+uu = [u, 0]'; % vecteur u si l'hover était en position de base
+uuu = ROT*uu; % on le passe dans le repère de l'hover
 
 vv = [0, v]';
 vvv = ROT*vv;
 
-if (mode==1)
+if (mode==1)    % si c'est la premièe fois on créer h5 et h6
     h5 = quiver(x_pos, y_pos, uuu(1), uuu(2));
     h6 = quiver(x_pos, y_pos, vvv(1), vvv(2));
-else
+else    % sinon on les actualise
      set(h5,'XData',center_abs(1),'YData', center_abs(2), 'Udata', uuu(1), 'Vdata', uuu(2));
      set(h6,'XData',center_abs(1),'YData', center_abs(2), 'Udata', vvv(1), 'Vdata', vvv(2));   
 end
@@ -76,14 +78,15 @@ else
      set(h8,'XData',pD_abs(1),'YData', pD_abs(2), 'Udata', FFFd(1), 'Vdata', FFFd(2));   
 end
 
-% Définition de l'axe : 
-scale = 0.5;
-
+% Définition de l'axe :
+%scale = 0.5;
 %axis([x_pos-1*scale x_pos+1*scale y_pos-1*scale y_pos+1*scale])
 %axis([0 8 -8 0])
 
-
-% Repère 
+% Titre et axes label :
+xlabel('x(m)');
+ylabel('y(m)');
+title('Simulateur'); 
 
 % Chassis
 x = [0, (11/15)*long, long, (11/15)*long, 0, 0];
@@ -113,7 +116,7 @@ else
 	set(h2,'XData',X,'YData',Y);
 end
 
-% Roue gauche
+% Moteur gauche
 x = ([0,long_mot,long_mot,0,0]+0.001);
 y = ([0,0,long_mot,long_mot,0]+a);
 aux = ROT*[x;y] + [x_pos*ones(size(x));y_pos*ones(size(x))];
@@ -126,24 +129,3 @@ if (mode==1)
 else
  	set(h3,'XData',X,'YData',Y);
 end
-
-% Affichage des vitesses :
-
-
-% % Helice :
-% numPoints=100; %Number of points making up the circle
-% radius=(2/3)*larg;      %Radius of the circle
-% 
-% %Define circle in polar coordinates (angle and radius)
-% theta=linspace(0,2*pi,numPoints); %100 evenly spaced points between 0 and 2pi
-% rho=ones(1,numPoints)*radius; %Radius should be 1 for all 100 points
-% 
-% %Convert polar coordinates to Cartesian for plotting
-% [X,Y] = pol2cart(theta,rho); 
-% 
-% if (mode==1)
-%  	h4 = plot((X+long/2),Y,'b-','linewidth',2);
-% 	set(h4,'EraseMode','xor','LineWidth',2);
-% else
-%  	set(h4,'XData',X,'YData',Y);
-% end

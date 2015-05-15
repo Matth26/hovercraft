@@ -1,10 +1,8 @@
 function [dq] = Acc2Vit2Pos(t, q, Fb)
-    % q(1) = x_p
-    % q(2) = x
-    % q(3) = y_p
-    % q(4) = y
-    % q(5) = theta_p
-    % q(6) = theta
+    % q(1) = x_p      q(2) = x
+    % q(3) = y_p      q(4) = y
+    % q(5) = theta_p  q(6) = theta
+    
     Vect_v_abs = zeros(3,1);
     Vect_v_abs(1) = q(1); % x_p = q(1)
     Vect_v_abs(2) = q(3); % y_p = q(3)
@@ -15,10 +13,11 @@ function [dq] = Acc2Vit2Pos(t, q, Fb)
     Vect_v_rob = McInv(Vect_v_abs,q(6));
     
     Frottements = Frottement(Vect_v_rob);
-    %Frottements = Frottement(Vect_v_abs);
+    % Frottements = Frottement(Vect_v_abs); % on aurait également pu
+    % appliquer les frottement dans le repère absolu
     
     %------- SOUSTRACTEUR -------%
-    %YUR=[0 Yur*Vect_v_rob(1)*Vect_v_rob(3) 0]';
+    % YUR=[0 Yur*Vect_v_rob(1)*Vect_v_rob(3) 0]';
     Diff = (Fb - Frottements);%+YUR;
     
     % Calcul de l'accélération dans le plan du robot (u_p, v_p, r_p)

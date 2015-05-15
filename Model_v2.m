@@ -104,7 +104,7 @@ Vect_F =[FG;
 Fb = MAct(Vect_F)
 
 dt = 0.1;
-tmax = 3;
+tmax = 0.63;
 
 % Plot initialisation
 ptr = plot(Vect_pos_abs(1), Vect_pos_abs(2));
@@ -126,11 +126,12 @@ for T=0:dt:tmax*5
     plot_hover(q, Vect_F, 0)        
         
     % dessin
+    %----------------- Dessin ---------------%
     set(ptr,'xdata',Vect_pos_abs(1),'ydata',Vect_pos_abs(2))
     plot(x,y);
     drawnow
     
-    %------------ Calcul commande ----------%
+    %------------ Calcul commande -----------%
     
      % Test de la fronde :
 %     if(T>10 && T<10.2)
@@ -143,14 +144,10 @@ for T=0:dt:tmax*5
 %                     0];
 %         Fb = MAct(Vect_F);   
 %     end
-
-    
-
     
     %----------------- ODE  ----------------%
     % On resout l'equa diff du second ordre
     % pour obtenir la vitesse du robot dans le plan absolu
-     %toto=Acc2Vit2Pos(T, q, Fb,Yur);
     [t45, q45] = ode45(@(t,q) Acc2Vit2Pos(t, q, Fb),[0 dt], q);
     
     % On stock la trajectoire dans q_stock
@@ -174,6 +171,9 @@ end
 % Plot de la trajectoire
 figure(2)
 hold on
+xlabel('x(m)');
+ylabel('y(m)');
+title('Trajectoire');
 plot(q_stock(2,:), q_stock(4,:));
 %plot(x3, y3, 'rO');
 hold off

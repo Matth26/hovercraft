@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.25)  25 MAR 2015 09:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.25)  15 MAY 2015 11:18
 entering extended mode
 **pagedegarde.tex
-(D:\Cours\S8\Projets\android\pagedegarde.tex
+(D:\Cours\S8\Projets\hovercraft\latex\pagedegarde.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -290,7 +290,7 @@ If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
 l.14       \includegraphics
-                           [scale=0.15]{head.png}\\
+                           [scale=0.38]{head.png}\\
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -305,7 +305,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.14       \includegraphics[
-                            scale=0.15]{head.png}\\
+                            scale=0.38]{head.png}\\
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
@@ -318,8 +318,8 @@ Missing character: There is no e in font nullfont!
 Missing character: There is no = in font nullfont!
 Missing character: There is no 0 in font nullfont!
 Missing character: There is no . in font nullfont!
-Missing character: There is no 1 in font nullfont!
-Missing character: There is no 5 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+Missing character: There is no 8 in font nullfont!
 Missing character: There is no ] in font nullfont!
 Missing character: There is no h in font nullfont!
 Missing character: There is no e in font nullfont!
@@ -487,7 +487,7 @@ or  <return>  to continue without it.
  
 Here is how much of TeX's memory you used:
  14 strings out of 493921
- 259 string characters out of 3144882
+ 286 string characters out of 3144882
  50031 words of memory out of 3000000
  3405 multiletter control sequences out of 15000+200000
  4249 words of font info for 16 fonts, out of 3000000 for 9000

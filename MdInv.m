@@ -8,4 +8,6 @@ Md = [m_u   0       0;
 Md_inv = inv(Md);
 
 MDynaInv = Md_inv * Vect ;
+
 end
+

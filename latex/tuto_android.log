@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.25)  28 MAR 2015 17:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.3.25)  15 MAY 2015 11:12
 entering extended mode
 **tuto_android.tex
-(D:\Cours\S8\Projets\android\tuto_android.tex
+(D:\Cours\S8\Projets\hovercraft\latex\tuto_android.tex
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -697,8 +697,8 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
-(D:\Cours\S8\Projets\android\tuto_android.aux
-(D:\Cours\S8\Projets\android\pagedegarde.aux))
+(D:\Cours\S8\Projets\hovercraft\latex\tuto_android.aux
+(D:\Cours\S8\Projets\hovercraft\latex\pagedegarde.aux))
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
 LaTeX Font Info:    ... okay on input line 41.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
@@ -768,17 +768,17 @@ LaTeX Info: Redefining \ref on input line 41.
 LaTeX Info: Redefining \pageref on input line 41.
 LaTeX Info: Redefining \nameref on input line 41.
 
-(D:\Cours\S8\Projets\android\tuto_android.out)
-(D:\Cours\S8\Projets\android\tuto_android.out)
+(D:\Cours\S8\Projets\hovercraft\latex\tuto_android.out)
+(D:\Cours\S8\Projets\hovercraft\latex\tuto_android.out)
 \@outlinefile=\write3
 \c@lstlisting=\count125
 
-(D:\Cours\S8\Projets\android\pagedegarde.tex
-<head.png, id=51, 803.0pt x 801.99625pt>
+(D:\Cours\S8\Projets\hovercraft\latex\pagedegarde.tex
+<head.png, id=51, 301.125pt x 301.125pt>
 File: head.png Graphic file (type png)
  <use head.png>
 Package pdftex.def Info: head.png used on input line 14.
-(pdftex.def)             Requested size: 120.4448pt x 120.29424pt.
+(pdftex.def)             Requested size: 114.42868pt x 114.42868pt.
 
 <mea.jpg, id=53, 49.8663pt x 67.452pt>
 File: mea.jpg Graphic file (type jpg)
@@ -794,10 +794,10 @@ Package pdftex.def Info: um.png used on input line 22.
  [1
 
 
-{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Cours/S8/Projets/andro
-id/head.png>] [2 <D:/Cours/S8/Projets/android/mea.jpg> <D:/Cours/S8/Projets/and
-roid/um.png>])
-(D:\Cours\S8\Projets\android\tuto_android.toc
+{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map} <D:/Cours/S8/Projets/hover
+craft/latex/head.png> <D:/Cours/S8/Projets/hovercraft/latex/mea.jpg> <D:/Cours/
+S8/Projets/hovercraft/latex/um.png>]) (D:\Cours\S8\Projets\hovercraft\latex\tut
+o_android.toc
 LaTeX Font Info:    Try loading font information for OML+lmm on input line 4.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\lm\omllmm.fd"
@@ -840,17 +840,12 @@ ndroid / android-[]capteurs$[]
  []
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 104.
-pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.104 \end{document}
-                     [2
+[2
 
 ]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 104.
- (D:\Cours\S8\Projets\android\tuto_android.aux
-(D:\Cours\S8\Projets\android\pagedegarde.aux))
+ (D:\Cours\S8\Projets\hovercraft\latex\tuto_android.aux
+(D:\Cours\S8\Projets\hovercraft\latex\pagedegarde.aux))
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 104.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 104.
 Package rerunfilecheck Info: File `tuto_android.out' has not changed.
@@ -859,8 +854,8 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 104.
  ) 
 Here is how much of TeX's memory you used:
  9111 strings out of 493921
- 136913 string characters out of 3144882
- 215875 words of memory out of 3000000
+ 137084 string characters out of 3144882
+ 215865 words of memory out of 3000000
  12269 multiletter control sequences out of 15000+200000
  41100 words of font info for 34 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -873,9 +868,9 @@ lic/lm/lmbx12.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmcs
 c10.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr10.pfb><C:/
 Program Files (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmr12.pfb><C:/Program File
 s (x86)/MiKTeX 2.9/fonts/type1/public/lm/lmtt10.pfb>
-Output written on tuto_android.pdf (4 pages, 657545 bytes).
+Output written on tuto_android.pdf (3 pages, 545131 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
+ 116 PDF objects out of 1000 (max. 8388607)
  16 named destinations out of 1000 (max. 500000)
  112 words of extra memory for PDF output out of 10000 (max. 10000000)
 
