@@ -104,7 +104,7 @@ Vect_F =[FG;
 Fb = MAct(Vect_F)
 
 dt = 0.1;
-tmax = 0.63;
+tmax = 5;
 
 % Plot initialisation
 ptr = plot(Vect_pos_abs(1), Vect_pos_abs(2));
@@ -133,17 +133,17 @@ for T=0:dt:tmax*5
     
     %------------ Calcul commande -----------%
     
-     % Test de la fronde :
-%     if(T>10 && T<10.2)
-%         x3 = q(2);
-%         y3 = q(4);
-%     end 
-%     if(T>=10.2)
-%         Vect_F =[   -0.05;
-%                     0.05;
-%                     0];
-%         Fb = MAct(Vect_F);   
-%     end
+    % Test de la fronde :
+    if(T>10 && T<10.2)
+        x3 = q(2);
+        y3 = q(4);
+    end 
+    if(T>=10.2)
+        Vect_F =[   -0.05;
+                    0.05;
+                    0];
+        Fb = MAct(Vect_F);   
+    end
     
     %----------------- ODE  ----------------%
     % On resout l'equa diff du second ordre
@@ -167,6 +167,8 @@ for T=0:dt:tmax*5
     y = Vect_pos_abs(2);
     theta = Vect_pos_abs(3);
 end
+
+
 
 % Plot de la trajectoire
 figure(2)

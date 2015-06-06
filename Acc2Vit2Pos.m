@@ -35,3 +35,4 @@ function [dq] = Acc2Vit2Pos(t, q, Fb)
     dq(5) = Vect_acc_abs(3);    % theta_pp = Vect_acc_abs(3)
     dq(6) = q(5);               % theta_p = q(5)
 
+    
