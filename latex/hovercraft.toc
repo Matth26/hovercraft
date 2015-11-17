@@ -1,0 +1,20 @@
+\select@language {french}
+\contentsline {section}{\numberline {1}Introduction}{2}{section.1}
+\contentsline {subsection}{\numberline {1.1}R\IeC {\'e}partition des t\IeC {\^a}ches}{2}{subsection.1.1}
+\contentsline {section}{\numberline {2}\IeC {\'E}tude de fonctionnement g\IeC {\'e}n\IeC {\'e}ral d'un a\IeC {\'e}roglisseur}{2}{section.2}
+\contentsline {section}{\numberline {3}Simulateur}{2}{section.3}
+\contentsline {subsection}{\numberline {3.1}Mod\IeC {\`e}le}{2}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Impl\IeC {\'e}mentation}{2}{subsection.3.2}
+\contentsline {subsubsection}{\numberline {3.2.1}Sch\IeC {\'e}ma de commande}{2}{subsubsection.3.2.1}
+\contentsline {subsubsection}{\numberline {3.2.2}Matrice d'actionnement}{3}{subsubsection.3.2.2}
+\contentsline {subsubsection}{\numberline {3.2.3}Mod\IeC {\`e}le dynamique inverse}{4}{subsubsection.3.2.3}
+\contentsline {subsubsection}{\numberline {3.2.4}Mod\IeC {\`e}le cin\IeC {\'e}matique}{4}{subsubsection.3.2.4}
+\contentsline {subsubsection}{\numberline {3.2.5}Fonction d'int\IeC {\'e}gration}{5}{subsubsection.3.2.5}
+\contentsline {subsubsection}{\numberline {3.2.6}Mod\IeC {\`e}le cin\IeC {\'e}matique inverse}{6}{subsubsection.3.2.6}
+\contentsline {subsubsection}{\numberline {3.2.7}Boucle globale}{7}{subsubsection.3.2.7}
+\contentsline {subsubsection}{\numberline {3.2.8}Fonction d'affichage de l'hovercraft}{9}{subsubsection.3.2.8}
+\contentsline {subsubsection}{\numberline {3.2.9}R\IeC {\'e}sultats}{10}{subsubsection.3.2.9}
+\contentsline {subsection}{\numberline {3.3}Validation (test de la fronde)}{11}{subsection.3.3}
+\contentsline {section}{\numberline {4}M\IeC {\'e}canique}{12}{section.4}
+\contentsline {section}{\numberline {5}Programmation}{12}{section.5}
+\contentsline {section}{\numberline {6}Conclusion}{12}{section.6}
